@@ -6,41 +6,44 @@ import './Cards.css';
 function Card() {
     return(
         <div className='cards'>
-            <h1> Check out these EPIC Destination</h1>
+            <h2> Wykorzystaj</h2>
+            <h1>nowe technologie</h1>
+            <h2>i zobacz swoje produkty w wersji cyfrowej!</h2>
+
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
-                        src='images/img-8.jpg'
-                        text='Explore the hidden waterfall deep inside the Amazon Jungle'
-                        label='Adventure'
-                        path='/services'
+                        src='images/skanowanie_krzeslo.png'
+                        text='Skanowanie 3D'
+                        label='Einscan HX'
+                        path='/projects'
                     />
                         <CardItem
-                            src='images/img-2.jpg'
-                            text='Travel through the Islands of Bali in a Private Cruise'
-                            label='Luxury'
-                            path='/services'
+                            src='images/Krzesło-Olando.png'
+                            text='Modelowanie 3d. Inżynieria odwrotna'
+                            label='SolidEdge'
+                            path='/projects'
                         />
                     </ul>
                     <ul className="cards__items">
                         <CardItem
-                            src='images/img-9.jpg'
-                            text='Explore the hidden waterfall deep inside the Amazon Jungle'
-                            label='Adventure'
+                            src='images/garderoba.png'
+                            text='Projektowanie'
+                            label='Sketchup'
                             path='/services'
                         />
                         <CardItem
-                            src='images/img-2.jpg'
-                            text='Travel through the Islands of Bali in a Private Cruise'
-                            label='Luxury'
-                            path='/services'
+                            src='images/3.png'
+                            text='Wizualizacja produktu'
+                            label='SketchUp + V-Ray'
+                            path='/projects'
                         />
                         <CardItem
-                            src='images/img-2.jpg'
-                            text='Travel through the Islands of Bali in a Private Cruise'
-                            label='Luxury'
-                            path='/services'
+                            src='images/dokumentacja.png'
+                            text='Rysunki techniczne'
+                            label='SolidEdge'
+                            path='/projects'
                         />
                     </ul>
                 </div>

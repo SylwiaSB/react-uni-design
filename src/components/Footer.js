@@ -6,63 +6,43 @@ import {Link} from "react-router-dom";
 function Footer() {
     return (
         <div className='footer-container'>
-            <section className='footer-subscription'>
-                <p className='footer-subscription-heading'>
-                    Join the adventure newsletter to receive our best vacation deals
+
+            <section className='footer-contact'>
+                <p className='footer-contact-heading'>
+                    Sprawdź, jakie rozwiązania mamy dla Ciebie!
                 </p>
-                <p className='footer-subscription-text'>
-                    You can unsubscribe at any time.
+                <p className='footer-contact-text'>
+
                 </p>
                 <div className='input-areas'>
                     <form>
-                        <input type='email' placeholder='Your Email' className='footer-input'/>
-                        <Button  buttonStyle='btn--outline'>Subscribe</Button>
+                        <input type='tel' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                               placeholder='zostaw swój numer telefonu' id="phone" name="phone" className='footer-input'/>
+                        <Button  buttonStyle='btn--outline'>Skontaktujemy się z Tobą</Button>
                     </form>
                 </div>
             </section>
+
             <div className="footer-links">
             <div className="footer-link-wrapper">
-            <div className="footer-link-items">
-                 <h2>About Us</h2>
-                 <Link to='/'>How it works</Link>
-                <Link to='/'>Testimonials</Link>
-                 <Link to='/'>Careers</Link>
-                 <Link to='/'>Investors</Link>
-                 <Link to='/'>Terms of Service</Link>
-             </div>
                 <div className="footer-link-items">
-                    <h2>Contact Us</h2>
-                    <Link to='/'>Contact</Link>
-                    <Link to='/'>Support</Link>
-                    <Link to='/'>Destinations</Link>
-                    <Link to='/'>Sponsorships</Link>
+                <Link to='/about'><h2>O firmie</h2></Link>
                 </div>
-        </div>
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>Videos</h2>
-                        <Link to='/'>Submit Video</Link>
-                        <Link to='/'>Ambassadors</Link>
-                        <Link to='/'>Agency</Link>
-                        <Link to='/'>Influencer</Link>
-                    </div>
-                    <div className="footer-link-items">
-                        <h2>Social Media</h2>
-                        <Link to='/'>Instagram</Link>
-                        <Link to='/'>Facebook</Link>
-                        <Link to='/'>Youtube</Link>
-                        <Link to='/'>Twitter</Link>
-                    </div>
+                <div className="footer-link-items">
+                    <Link to='/projects'><h2>Projekty</h2></Link>
                 </div>
-    </div>
+            </div>
+            </div>
+
             <section className='social-media'>
                 <div className="social-media-wrap">
+
                     <div className="footer-logo">
                         <Link to='/' className='social-logo'>
-                            UNI <i className='fab fa-typo3'></i>
+                            <img alt='footer logo' src='/images/Logo_uni_design.svg'/>
                         </Link>
                     </div>
-                    <small className='website-rights'>UNI @ 2023</small>
+
                     <div className="social-icons">
                         <Link className='social-icon-link facebook'
                         to='/'
@@ -76,14 +56,19 @@ function Footer() {
                               target='_blank'
                               aria-label='Instagram'
                         >
-                            <i className='fab instagram'></i>
+                            <i className="fa-brands fa-instagram"></i>
                         </Link>
                     </div>
-
                 </div>
 
             </section>
-</div>
+            <hr/>
+            <section>
+                <small className='website-rights'>UNI @ 2023</small>
+            </section>
+
+
+        </div>
 );
 }
 

@@ -2,12 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .home,
-.services,
-.products,
+.projects,
+.about,
+.contact,
 .sign-up {
     display: flex;
     height: 90vh;
@@ -16,17 +17,24 @@
     font-size: 3rem;
 }
 
-.services {
-    background-image: url('/public/images/img-2.jpg');
+.projects{
+    background-image: url('/public/images/stolik_fotografia.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
 }
-
-.products {
-    background-image: url('/public/images/img-1.jpg');
+.about {
+    background-image: url('/public/images/stolik_fotografia.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+}
+.contact {
+    background-image: url('/public/images/stolik_fotografia.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,7 +43,7 @@
 }
 
 .sign-up {
-    background-image: url('/public/images/img-8.jpg');
+    background-image: url('/public/images/stolik_fotografia.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

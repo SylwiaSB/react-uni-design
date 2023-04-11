@@ -8,9 +8,9 @@ import './Button.css'
 function BannerSection() {
     return (
         <div className='banner-container'>
-            <video src='/videos/video-1.mp4' autoPlay loop muted />
-            <h1>ADVENTURE AWAITS</h1>
-            <p>What are you waiting for?</p>
+            <video src='/videos/Hybrid Blue Laser & LED Light Source Handheld 3D Scanner EinScan HX - 3D Digitizing Solution.mp4' autoPlay loop muted />
+            <h1>ODKRYJ NOWY WYMIAR PROJEKTOWANIA!</h1>
+            {/*<p>Odkryj nowy wymiar projektowania !</p>*/}
 
             <div className='banner-btns'>
                 <Button

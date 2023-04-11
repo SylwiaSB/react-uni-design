@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(228, 235, 235) 100%);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -15,33 +15,33 @@
     justify-content: center;
     align-items: center;
     height: 80px;
-    max-width: 1500px;
+    max-width: 1900px;
 }
 
 .navbar-logo {
-    color: #fff;
-    justify-self: start;
     margin-left: 20px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
+    /*text-decoration: none;*/
+    /*font-size: 2rem;*/
+    /*display: flex;*/
+    /*align-items: center;*/
 }
 
-.fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-}
+/*.fa-typo3 {*/
+/*    margin-left: 0.5rem;*/
+/*    font-size: 1.8rem;*/
+/*}*/
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    /*grid-gap: 10px;*/
     list-style: none;
     text-align: center;
     width: 60vw;
     margin-right: 2rem;
+    justify-content: end;
+;
 }
 
 .nav-item {
@@ -49,21 +49,22 @@
 }
 
 .nav-links {
-    color: #fff;
+    color: #2B4248;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     height: 100%;
+    justify-content: center;
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid #2B4248;
     transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-    color: #fff;
+    color: #2B4248;
 }
 
 .nav-links-mobile {
@@ -81,6 +82,7 @@
 
     .nav-menu {
         display: flex;
+        justify-content: flex-start;
         flex-direction: column;
         width: 100%;
         height: 90vh;
@@ -92,7 +94,7 @@
     }
 
     .nav-menu.active {
-        background: #242222;
+        background: #2B4248;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -100,6 +102,7 @@
     }
 
     .nav-links {
+        color: #DBDED5;
         text-align: center;
         padding: 2rem;
         width: 100%;
@@ -108,7 +111,7 @@
 
     .nav-links:hover {
         background-color: #fff;
-        color: #242424;
+        color: #DBDED5;
         border-radius: 0;
     }
 
@@ -116,14 +119,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(25%, 50%);
+        transform: translate(25%, 20%);
     }
 
     .menu-icon {
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 20px;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;

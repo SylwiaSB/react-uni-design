@@ -1,0 +1,19 @@
+.welcome {
+    padding: 4rem;
+    background: #fff;
+}
+
+.welcome__container {
+    padding: 2rem;
+    font-family: 'Montserrat ', serif;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.welcome__container__text {
+    border: 2px solid;
+    padding: 4rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
