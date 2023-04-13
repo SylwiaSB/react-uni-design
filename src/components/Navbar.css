@@ -75,9 +75,9 @@
     display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 820px) {
     .NavbarItems {
-        position: relative;
+        position: absolute;
     }
 
     .nav-menu {
@@ -110,7 +110,7 @@
     }
 
     .nav-links:hover {
-        background-color: #fff;
+        background-color:#F5F5F5;
         color: #DBDED5;
         border-radius: 0;
     }
@@ -133,7 +133,7 @@
     }
 
     .fa-times {
-        color: #fff;
+        color: #2B4248;
         font-size: 2rem;
     }
 
@@ -146,15 +146,15 @@
         text-decoration: none;
         font-size: 1.5rem;
         background-color: transparent;
-        color: #fff;
+        color: #DBDED5;
         padding: 14px 20px;
-        border: 1px solid #fff;
+        border: 1px solid #DBDED5;
         transition: all 0.3s ease-out;
     }
 
     .nav-links-mobile:hover {
-        background: #fff;
-        color: #242424;
-        transition: 250ms;
+        background: #DBDED5;
+        color: #F5F5F5;
+        transition: 100ms;
     }
 }

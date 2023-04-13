@@ -9,27 +9,29 @@ function BannerSection() {
     return (
         <div className='banner-container'>
             <video src='/videos/Hybrid Blue Laser & LED Light Source Handheld 3D Scanner EinScan HX - 3D Digitizing Solution.mp4' autoPlay loop muted />
-            <h1>ODKRYJ NOWY WYMIAR PROJEKTOWANIA!</h1>
-            {/*<p>Odkryj nowy wymiar projektowania !</p>*/}
+           <section className='banner-box-container'>
+               <h1>Odkryj nowy wymiar projektowania !</h1>
 
-            <div className='banner-btns'>
-                <Button
-                    className='btns'
-                    buttonStyle='btn--outline'
-                    buttonSize='btn--large'
-                >
-                    GET STARTED
-                </Button>
+               <div className='banner-btns'>
+                   <Button
+                       className='btns'
+                       buttonStyle='btn--outline'
+                       buttonSize='btn--large'
+                   >
+                       ZAPYTAJ
+                   </Button>
 
-                <Button
-                    className='btns'
-                    buttonStyle='btn--primary'
-                    buttonSize='btn--large'
-                >
-                    WATCH TRAILER <i
-                    className='fa-solid fa-circle-play' />
-                </Button>
-            </div>
+                   <Button
+                       className='btns'
+                       buttonStyle='btn--primary'
+                       buttonSize='btn--large'
+                   >
+                       ZOBACZ <i
+                       className='fa-solid fa-circle-play' />
+                   </Button>
+           </div>
+
+            </section>
         </div>
     );
 }

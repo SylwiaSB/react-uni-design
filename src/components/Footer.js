@@ -1,24 +1,32 @@
 import React from "react";
-import {Button} from "./Button";
+// import {Button} from "./Button";
 import './Footer.css'
 import {Link} from "react-router-dom";
 
 function Footer() {
     return (
+
         <div className='footer-container'>
 
             <section className='footer-contact'>
-                <p className='footer-contact-heading'>
+                <h1 className='footer-contact-heading'>
                     Sprawdź, jakie rozwiązania mamy dla Ciebie!
-                </p>
-                <p className='footer-contact-text'>
+                </h1>
 
-                </p>
-                <div className='input-areas'>
-                    <form>
-                        <input type='tel' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
-                               placeholder='zostaw swój numer telefonu' id="phone" name="phone" className='footer-input'/>
-                        <Button  buttonStyle='btn--outline'>Skontaktujemy się z Tobą</Button>
+                <div>
+
+                    <form action="/action_page.php" className='input-areas'>
+                        <input type='text' required
+                               placeholder='Imię' id="fname" name="fname" className='footer-input'/>
+
+                        <input type='text'
+                                   placeholder='Nazwisko' id="lname" name="lname" className='footer-input'/>
+
+                        <input type='tel' pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required
+                               placeholder='numer telefonu' id="phone" name="phone" className='footer-input'/>
+
+                        <input type="submit" value="Skontaktujemy się z Tobą" className='footer-input-button'></input>
+
                     </form>
                 </div>
             </section>
@@ -26,10 +34,10 @@ function Footer() {
             <div className="footer-links">
             <div className="footer-link-wrapper">
                 <div className="footer-link-items">
-                <Link to='/about'><h2>O firmie</h2></Link>
+                <Link to='/about'><p>O firmie</p></Link>
                 </div>
                 <div className="footer-link-items">
-                    <Link to='/projects'><h2>Projekty</h2></Link>
+                    <Link to='/projects'><p>Projekty</p></Link>
                 </div>
             </div>
             </div>
@@ -60,10 +68,10 @@ function Footer() {
                         </Link>
                     </div>
                 </div>
-
             </section>
+
+            <section className='website-rights-line'>
             <hr/>
-            <section>
                 <small className='website-rights'>UNI @ 2023</small>
             </section>
 
