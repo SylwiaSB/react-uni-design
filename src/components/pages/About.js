@@ -1,17 +1,25 @@
 import React from "react";
 import "../../App.css";
-import CardsProjects from "../CardsProjects";
+import CardsAbout from "../CardsAbout";
 
 export default function About() {
   return (
       <>
           <div className="about">
               <div className='about-background'>
-                  <div>O FIRMIE</div>
+                  <div className='about-background-text'>
+                      <p>"Nie trać czasu na tradycyjne metody projektowania!
+                          Skorzystaj z zaawansowanych technologii 3D i inżynierii odwrotnej."
+                      </p>
+                  </div>
               </div>
           </div>
-          <CardsProjects/>
+
+          <div>
+              < CardsAbout/>
+          </div>
       </>
 
   );
 }
+

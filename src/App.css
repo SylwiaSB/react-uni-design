@@ -55,9 +55,16 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    color: #DBDED5;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
 }
+
+.about-background-text {
+    padding: 50px;
+}
+
 .contact {
     background-image: url('/public/images/scan_fuirniture_laser_dark.png');
     background-position: center;
