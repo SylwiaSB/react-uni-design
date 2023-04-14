@@ -4,20 +4,16 @@ import Cards from "../Cards";
 import Footer from "../Footer";
 import Welcome from "../Welcome";
 
-import '../../App.css'
+import "../../App.css";
 
-
-
-
-function Home () {
-    return (
-        <>
-        <BannerSection />
-        <Cards />
-            <Welcome />
-        <Footer />
-        </>
-    )
+function Home() {
+  return (
+    <>
+      <BannerSection />
+      <Cards />
+      <Welcome />
+    </>
+  );
 }
 
-export default Home
+export default Home;

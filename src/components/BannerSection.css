@@ -8,15 +8,19 @@ video {
     z-index: -1;
 }
 
+.rel-btn {
+    position: absolute;
+    right: 24px;
+}
+
 .banner-container {
-    /*background: url('images/img-8.jpg') center center/cover no-repeat;*/
+    position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*!*box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);*!*/
     object-fit: contain;
 }
 .banner-box-container {

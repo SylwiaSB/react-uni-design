@@ -8,12 +8,13 @@ import Contact from "./components/pages/Contact";
 import SignUp from "./components/pages/SignUp";
 
 import './App.css';
+import Footer from "./components/Footer";
 
 
 
 function App() {
   return (
-    <div>
+    <div className='app-wrapper'>
         <Router>
             <Navbar />
             <Routes>
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/contact" exact element={<Contact/>} />
                 <Route path="/sign-up" exact element={<SignUp/>} />
             </Routes>
+            <Footer />
         </Router>
     </div>
   );

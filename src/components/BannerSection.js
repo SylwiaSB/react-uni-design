@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Button} from "./Button";
 
 import './BannerSection.css';
@@ -6,33 +6,56 @@ import '../App.css';
 import './Button.css'
 
 function BannerSection() {
+
+    const [bannerVisible, setBanerVisible] = useState(true)
+
+    const toggleBanner = () => {
+        setBanerVisible(!bannerVisible)
+    }
+
+
+
     return (
-        <div className='banner-container'>
-            <video src='/videos/Hybrid Blue Laser & LED Light Source Handheld 3D Scanner EinScan HX - 3D Digitizing Solution.mp4' autoPlay loop muted />
-           <section className='banner-box-container'>
-               <h1>Odkryj nowy wymiar projektowania !</h1>
+        <>
+            <div className='banner-container'>
+                <video src='/videos/Hybrid Blue Laser & LED Light Source Handheld 3D Scanner EinScan HX - 3D Digitizing Solution.mp4' autoPlay loop muted />
 
-               <div className='banner-btns'>
-                   <Button
-                       className='btns'
-                       buttonStyle='btn--outline'
-                       buttonSize='btn--large'
-                   >
-                       ZAPYTAJ
-                   </Button>
+                { bannerVisible ? (
+                <section className='banner-box-container'>
+                        <h1>Odkryj nowy wymiar projektowania !</h1>
 
-                   <Button
-                       className='btns'
-                       buttonStyle='btn--primary'
-                       buttonSize='btn--large'
-                   >
-                       ZOBACZ <i
-                       className='fa-solid fa-circle-play' />
-                   </Button>
-           </div>
+                        <div className='banner-btns'>
+                            <Button
+                                buttonStyle='btn--outline'
+                                buttonSize='btn--large'
+                                goTo={'/contact'}
+                            >
+                                ZAPYTAJ
+                            </Button>
 
-            </section>
-        </div>
+                            <Button
+                                buttonStyle='btn--primary'
+                                buttonSize='btn--large'
+                                onClick={()=> toggleBanner()}
+                            >
+                                ZOBACZ <i
+                                className='fa-solid fa-circle-play' />
+                            </Button>
+                        </div>
+
+                    </section>
+
+            ) : (<Button
+                customStyle={'rel-btn'}
+                buttonStyle='btn--outline'
+                buttonSize='btn--medium'
+                onClick={()=> toggleBanner()}
+            >
+                    <i className="fa-solid fa-backward-step"></i>
+            </Button>)}
+            </div>
+        </>
+
     );
 }
 

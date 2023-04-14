@@ -20,7 +20,7 @@ function Card() {
                         path='/projects'
                     />
                         <CardItem
-                            src='images/Krzesło-Olando.png'
+                            src='images/krzeslo-olando.png'
                             text='Modelowanie 3d. Inżynieria odwrotna'
                             label='SolidEdge'
                             path='/projects'

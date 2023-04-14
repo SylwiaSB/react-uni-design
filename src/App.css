@@ -5,28 +5,53 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.home,
+.app-wrapper {
+    min-width: 540px;
+}
+
 .projects,
 .about,
 .contact,
 .sign-up {
     display: flex;
-    height: 90vh;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
 }
 
-.projects{
-    background-image: url('/public/images/stolik_fotografia.png');
+.projects-background,
+.about-background,
+.contact-background,
+.sign-up-background {
+    background: rgba(228, 235, 235, 0.4);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.projects {
+    background-image: url('/public/images/scan_fuirniture_laser_blue_dark.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    color: #DBDED5;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
 }
+
+.projects-background-text {
+    padding: 50px;
+}
+
+
 .about {
-    background-image: url('/public/images/stolik_fotografia.png');
+    background-image: url('/public/images/portrait-computer_dark.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,7 +59,7 @@
     font-size: 100px;
 }
 .contact {
-    background-image: url('/public/images/stolik_fotografia.png');
+    background-image: url('/public/images/scan_fuirniture_laser_dark.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
