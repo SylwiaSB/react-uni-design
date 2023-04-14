@@ -29,7 +29,8 @@ The website will have a modern and visually appealing design that highlights the
 Here's a short guide on how to run a program from a GitHub repository that uses the React library:
 
 * Make sure you have the tools required to run the program, such as Node.js and npm, installed on your computer.
-Go to the repository on GitHub and clone the source code to your local computer using the "git clone" command (e.g. git clone https://github.com/username/repository-name.git).
+Go to the repository on GitHub and clone the source code to your local computer using the "git clone" 
+command (git clone https://github.com/SylwiaSB/react-uni-design.git).
 * Navigate to the directory containing the program's source code.
 * Run the npm install command to download and install the program's required dependencies.
 * Compile the source code by running the npm run build command.
