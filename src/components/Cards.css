@@ -3,26 +3,26 @@
     background: #F5F5F5;
 }
 
-.cards > h1 {
-    text-align: center;
-    font-family: Junge, sans-serif;
-    color: #2B4248;
-    font-size: 70px;
-}
+/*.cards > h1 {*/
+/*    text-align: center;*/
+/*    font-family: Montserrat, sans-serif;*/
+/*    color: #2B4248;*/
+/*    font-size: 70px;*/
+/*}*/
 
-.cards > h2 {
-    text-align: center;
-    font-family: Junge, sans-serif;
-    font-size: 36px;
-    letter-spacing: 20px;
+/*.cards > h2 {*/
+/*    text-align: center;*/
+/*    font-family: Montserrat, sans-serif;*/
+/*    font-size: 36px;*/
+/*    letter-spacing: 20px;*/
 
-}
-.cards > h3 {
-    text-align: center;
-    font-family: Junge, sans-serif;
-    font-size: 24px;
-    letter-spacing: 7px;
-}
+/*}*/
+/*.cards > h3 {*/
+/*    text-align: center;*/
+/*    font-family: Montserrat, sans-serif;*/
+/*    font-size: 24px;*/
+/*    letter-spacing: 7px;*/
+/*}*/
 
 .cards__container {
     display: flex;

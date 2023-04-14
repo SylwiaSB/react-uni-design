@@ -18,7 +18,8 @@ function BannerSection() {
     return (
         <>
             <div className='banner-container'>
-                <video src='/videos/Hybrid Blue Laser & LED Light Source Handheld 3D Scanner EinScan HX - 3D Digitizing Solution.mp4' autoPlay loop muted />
+                <video src='/videos/Hybrid Blue Laser & LED Light Source Handheld 3D Scanner EinScan HX - 3D Digitizing Solution.mp4'
+                       autoPlay loop muted />
 
                 { bannerVisible ? (
                 <section className='banner-box-container'>

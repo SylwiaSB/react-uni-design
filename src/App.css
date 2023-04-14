@@ -70,15 +70,20 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    color: #DBDED5;
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+}
+.contact-background-text {
+    padding: 50px;
 }
 
-.sign-up {
-    background-image: url('/public/images/stolik_fotografia.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-}
+/*.sign-up {*/
+/*    background-image: url('/public/images/stolik_fotografia.png');*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    color: #fff;*/
+/*    font-size: 100px;*/
+/*}*/

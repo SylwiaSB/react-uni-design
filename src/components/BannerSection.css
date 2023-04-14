@@ -23,6 +23,8 @@ video {
     align-items: center;
     object-fit: contain;
 }
+
+
 .banner-box-container {
     background: rgba(228, 235, 235, 0.7);
     height: 80vh;
@@ -36,9 +38,8 @@ video {
 
 .banner-box-container > h1 {
     color:#274C5B;
-    font-size: 80px;
-    /*margin-top: -200px;*/
-    font-family:Junge, serif;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 

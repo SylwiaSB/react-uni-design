@@ -6,9 +6,6 @@ import './Cards.css';
 function Card() {
     return(
         <div className='cards'>
-            <h2> WYKORZYSTAJ </h2>
-            <h1>NOWE TECHNOLOGIE</h1>
-            <h3>i zobacz swoje produkty w wersji cyfrowej!</h3>
 
             <div className="cards__container">
                 <div className="cards__wrapper">

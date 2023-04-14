@@ -11,9 +11,8 @@ export default function Projects() {
        <>
            <div className="projects">
                <div className='projects-background'>
-                   <div className='projects-background-text'>
-                       <p> WYKORZYSTAJ NOWE TECHNOLOGIE
-                       I ZOBACZ SWOJE PRODUKTY W WERSJI CYFROWEJ!</p>
+                   <div className='contact-background-text'>
+                       <p> Wykorzystaj nowe technologie i zobacz swoje pomysły w wersji cyfrowej!</p>
                    </div>
 
                </div>
